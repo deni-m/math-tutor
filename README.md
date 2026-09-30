@@ -1,0 +1,36 @@
+# Математика — простий сайт
+
+Статичні HTML-сторінки зі схемами та вправами. Відкрити `index.html` у браузері. Збірка, встановлення залежностей і JavaScript не потрібні.
+
+- `index.html` — список тем.
+- `equations.html` — від умови до рівнянь; шість задач у трьох коротких заняттях.
+- `fractions.html` — рівні дроби, НСК і чотири вправи.
+- `styles.css` — оформлення для телефону й комп'ютера.
+
+Репозиторій: [deni-m/math-tutor](https://github.com/deni-m/math-tutor).
+
+Адреса сайту: [deni-m.github.io/math-tutor](https://deni-m.github.io/math-tutor/).
+
+Ця папка є окремим Git-репозиторієм. Батьківські відповіді, журнал і план зберігаються поруч у `../egor_math/` і не входять до сайту.
+
+## GitHub Pages
+
+Джерело публікації: **Settings → Pages → Deploy from a branch → main → /(root)**. Файл `.nojekyll` уже додано для звичайних HTML-сторінок.
+
+Посилання на тему: [рівняння](https://deni-m.github.io/math-tutor/equations.html), [дроби](https://deni-m.github.io/math-tutor/fractions.html). Для конкретної задачі додати `#task-3` або інший номер. Наприклад, [задача про шафу і ящик](https://deni-m.github.io/math-tutor/equations.html#task-3). Можна також посилатися на блок: `equations.html#session-2`.
+
+Після змін зробити коміт і надіслати його в гілку публікації:
+
+```sh
+git push origin HEAD:main
+```
+
+GitHub Pages опублікує оновлення автоматично. Локальна робоча гілка може мати іншу назву; команда явно вказує віддалену `main`.
+
+Документація: [налаштування джерела GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+## Нова тема
+
+Додати HTML-сторінку з підключеним `styles.css` і посилання на неї в `index.html`. Навчальні приклади можна показувати повністю; відповіді до самостійних вправ залишаються у батьківській папці.
+
+Публічний сайт містить лише навчальний матеріал. Персональні результати й нотатки про дитину сюди не додавати.

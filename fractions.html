@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Рівні дроби та НСК — Математика</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Усі теми</a>
+  <p class="eyebrow">Пояснення та короткі вправи</p>
+  <h1>Рівні дроби та НСК</h1>
+  <p class="intro">Як зробити частини однакового розміру й порівняти дроби.</p>
+  <h2>1. Чому 1/2 = 2/4?</h2>
+  <p>Уяви одну шоколадку. Половина — одна з двох рівних частин. Якщо кожну половину розрізати навпіл, шоколадка матиме чотири частини, а твоя половина — дві з них.</p>
+  <figure id="equal-parts">
+    <div class="fraction-row"><span class="fraction-label">1/2</span><div class="strip" style="--parts: 2" role="img" aria-label="Зафарбована одна з двох рівних частин"><span class="filled"></span><span></span></div></div>
+    <div class="fraction-row"><span class="fraction-label">2/4</span><div class="strip" style="--parts: 4" role="img" aria-label="Зафарбовані дві з чотирьох рівних частин"><span class="filled"></span><span class="filled"></span><span></span><span></span></div></div>
+    <div class="fraction-row"><span class="fraction-label">4/8</span><div class="strip" style="--parts: 8" role="img" aria-label="Зафарбовані чотири з восьми рівних частин"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span><span></span><span></span></div></div>
+    <figcaption>Усі три шоколадки однакового розміру. Зафарбована кількість та сама, змінився лише розмір частин.</figcaption>
+  </figure>
+  <p>Це <strong>рівні дроби</strong>: різний запис, однакова величина. Коли кожну частину ділимо на кілька менших, чисельник і знаменник множимо на те саме число.</p>
+  <p class="formula">1/2 = (1 × 2)/(2 × 2) = 2/4</p>
+  <div class="callout"><p>Помножити лише знаменник не можна: 1/2 і 1/4 — різні кількості шоколаду.</p></div>
+  <p>Спробуй намалювати прямокутник і показати, чому <strong>2/3 = 4/6</strong>.</p>
+
+  <h2>2. Що таке НСК?</h2>
+  <p><strong>Кратні 3</strong> — числа, які виходять, коли множимо 3 на 1, 2, 3, … Кратні 4 знаходимо так само.</p>
+  <ul class="multiples">
+    <li>Кратні 3: 3, 6, 9, <mark>12</mark>, 15, …</li>
+    <li>Кратні 4: 4, 8, <mark>12</mark>, 16, 20, …</li>
+  </ul>
+  <p>12 — перше додатне число, яке є в обох рядах. Це <strong>найменше спільне кратне</strong>, скорочено <strong>НСК</strong>.</p>
+  <p class="formula">НСК(3, 4) = 12</p>
+  <p>Для спільного знаменника дробів шукаємо НСК їхніх <strong>знаменників</strong>. Воно ділиться на кожний із них без остачі.</p>
+  <div class="callout"><p>Кратне числу 4 — наприклад, 8 або 12. Дільник числа 12 — наприклад, 3 або 4. Для спільного знаменника нам потрібне саме <strong>кратне</strong>.</p></div>
+
+  <h2>3. Знайдемо НСК для 12 і 8</h2>
+  <ul class="multiples">
+    <li>Кратні 12: 12, <mark>24</mark>, 36, …</li>
+    <li>Кратні 8: 8, 16, <mark>24</mark>, 32, …</li>
+  </ul>
+  <p>Перший збіг — 24. Тому <strong>НСК(12, 8) = 24</strong>.</p>
+  <p>Швидкий випадок: якщо одне число вже кратне іншому, більше з них і є НСК. Наприклад, <strong>НСК(4, 12) = 12</strong>.</p>
+
+  <h2>4. Порівняймо 7/12 і 5/8</h2>
+  <p>Зробімо однакові частини — двадцять четверті. Кожну дванадцяту ділимо навпіл, а кожну восьму — на три частини.</p>
+  <p class="formula">7/12 = (7 × 2)/(12 × 2) = 14/24</p>
+  <p class="formula">5/8 = (5 × 3)/(8 × 3) = 15/24</p>
+  <figure id="compare-fractions">
+    <svg viewBox="0 0 530 134" role="img" aria-labelledby="compare-title compare-desc">
+      <title id="compare-title">Чотирнадцять та п’ятнадцять двадцять четвертих</title>
+      <desc id="compare-desc">Дві однакові смужки поділено на 24 рівні частини. У першій зафарбовано 14, а у другій 15. Друга має на одну частину більше.</desc>
+      <defs><pattern id="parts" width="18" height="36" patternUnits="userSpaceOnUse"><path d="M0 0 V36" stroke="#203346" stroke-width="1"/></pattern></defs>
+      <g font-family="system-ui, sans-serif" fill="#203346" font-size="18" font-weight="650">
+        <text x="0" y="42">14/24</text><text x="0" y="106">15/24</text>
+      </g>
+      <rect x="84" y="16" width="432" height="36" fill="white"/>
+      <rect x="84" y="16" width="252" height="36" fill="#90bbe7"/>
+      <rect x="84" y="80" width="432" height="36" fill="white"/>
+      <rect x="84" y="80" width="270" height="36" fill="#90bbe7"/>
+      <rect x="336" y="80" width="18" height="36" fill="#d8edc3"/>
+      <rect x="0" y="0" width="432" height="36" transform="translate(84 16)" fill="url(#parts)" stroke="#203346"/>
+      <rect x="0" y="0" width="432" height="36" transform="translate(84 80)" fill="url(#parts)" stroke="#203346"/>
+    </svg>
+    <figcaption>Зелена частинка показує різницю: одна двадцять четверта.</figcaption>
+  </figure>
+  <p>Отже, <strong>5/8 &gt; 7/12</strong>: п’ятнадцять однакових частин більше за чотирнадцять таких самих частин.</p>
+  <p class="note">Більший спільний знаменник також працює. Наприклад, 48. Але найменший зазвичай дає зручніші числа.</p>
+
+  <section class="session" id="practice">
+    <h2>Твоя спроба</h2>
+    <p class="note">Відповіді запиши у зошиті. Можна вибрати дві задачі й повернутися до інших пізніше.</p>
+    <article class="exercise" id="task-1"><h3>1. Знайди НСК</h3><p>Знайди НСК(4, 6). Запиши кілька кратних кожного числа.</p></article>
+    <article class="exercise" id="task-2"><h3>2. Порівняй дроби</h3><p>Що більше: 3/4 чи 5/8? Покажи, як зробив однакові частини.</p></article>
+    <article class="exercise" id="task-3"><h3>3. Знайди помилку</h3><p>Хтось написав: «2/3 = 2/6, бо тепер знаменник зручніший». Чи рівні ці дроби? Поясни на малюнку або словами.</p></article>
+    <article class="exercise" id="task-4"><h3>4. Два способи запису</h3><p>Знайди два різні спільні знаменники для 1/3 і 1/4. Який з них зручніший і чому?</p></article>
+  </section>
+  <footer><a href="index.html">← Усі теми</a></footer>
+</main>
+</body>
+</html>
