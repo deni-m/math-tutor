@@ -40,6 +40,12 @@ figcaption { font-size: 15px; color: var(--muted); margin-top: 16px; }
 .multiples li { padding: 8px 0; }
 mark { background: #d8edc3; color: #203346; padding: 2px 6px; border-radius: 4px; }
 .divider { margin: 36px 0; border: 0; border-top: 1px solid var(--line); }
+.value-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 16px; }
+.value-table caption { text-align: left; color: var(--muted); margin-bottom: 8px; }
+.value-table th, .value-table td { padding: 10px 8px; border: 1px solid var(--line); text-align: left; overflow-wrap: anywhere; }
+.value-table th { background: #eaf2fa; }
+details > summary { cursor: pointer; color: var(--blue); padding: 10px 0; }
+details[open] > summary { margin-bottom: 18px; }
 footer { margin-top: 48px; font-size: 16px; }
 @media (max-width: 540px) {
   body { font-size: 17px; }
